@@ -35,12 +35,12 @@ setup(
         'alpaca-trade-api >= 1.4.2',
         'bokeh >= 2.4.2',
         'dateparser >= 1.1.0',
-        'newnewtulipy >= 0.4.6.3',
-        'numpy >= 1.21.4',
+        'numpy >= 1.24.0',
         'pandas >= 1.1.5',
         'python-binance >= 1.0.15',
         'requests >= 2.26.0',
         'websocket-client >= 1.2.1',
+        'pyupbit >= 0.2.33',
     ],
     classifiers=[
         # Possible: "3 - Alpha", "4 - Beta" or "5 - Production/Stable"

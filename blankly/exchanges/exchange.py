@@ -29,6 +29,7 @@ from blankly.exchanges.interfaces.alpaca.alpaca_interface import AlpacaInterface
 from blankly.exchanges.interfaces.binance.binance_interface import BinanceInterface
 from blankly.exchanges.interfaces.kucoin.kucoin_interface import KucoinInterface
 from blankly.exchanges.interfaces.okx.okx_interface import OkxInterface
+from blankly.exchanges.interfaces.upbit.upbit_interface import UpbitInterface
 
 
 class Exchange(ABCExchange, abc.ABC):
@@ -82,6 +83,8 @@ class Exchange(ABCExchange, abc.ABC):
             self.interface = KucoinInterface(self.__type, calls)
         elif self.__type == "okx":
             self.interface = OkxInterface(self.__type, calls)
+        elif self.__type == "upbit":
+            self.interface = UpbitInterface(self.__type, calls)
 
         blankly.reporter.export_used_exchange(self.__type)
 
